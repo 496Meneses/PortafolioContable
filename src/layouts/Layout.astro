@@ -1,0 +1,159 @@
+---
+export interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'Meneses & Asociados - Servicios Contables y Empresariales', description = 'Firma especializada en servicios contables, tributarios, auditoría y servicios empresariales. Confianza y profesionalismo para su empresa.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="contabilidad, auditoría, tributación, servicios empresariales, SST, revisoría fiscal" />
+		<title>{title}</title>
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--color-primary: #1e293b; /* Azul gris muy oscuro */
+		--color-secondary: #64748b; /* Gris azulado medio */
+		--color-accent: #b8860b; /* Dorado elegante */
+		--color-gold-light: #d4af37; /* Dorado claro */
+		--color-text: #0f172a; /* Negro azulado */
+		--color-text-light: #475569; /* Gris azulado */
+		--color-text-muted: #94a3b8; /* Gris claro */
+		--color-background: #ffffff; /* Blanco puro */
+		--color-surface: #f8fafc; /* Gris casi blanco */
+		--color-surface-elevated: #f1f5f9; /* Gris muy claro */
+		--color-border: #e2e8f0; /* Gris border */
+		--color-border-light: #f1f5f9; /* Border muy claro */
+		--font-primary: 'Inter', sans-serif;
+		--font-display: 'Playfair Display', serif;
+		--shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+		--shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+		--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+		--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+		--border-radius: 6px;
+		--border-radius-lg: 12px;
+		--max-width: 1200px;
+		--transition: all 0.2s ease-in-out;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		font-family: var(--font-primary);
+	}
+
+	body {
+		font-family: var(--font-primary);
+		line-height: 1.6;
+		color: var(--color-text);
+		background-color: var(--color-background);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
+		font-weight: 600;
+		line-height: 1.2;
+		color: var(--color-primary);
+	}
+
+	.container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.875rem 1.75rem;
+		border-radius: var(--border-radius);
+		font-weight: 500;
+		text-decoration: none;
+		transition: var(--transition);
+		cursor: pointer;
+		border: none;
+		font-size: 0.95rem;
+		letter-spacing: 0.025em;
+	}
+
+	.btn-primary {
+		background-color: var(--color-primary);
+		color: white;
+		border: 1px solid var(--color-primary);
+	}
+
+	.btn-primary:hover {
+		background-color: var(--color-text);
+		border-color: var(--color-text);
+		transform: translateY(-1px);
+		box-shadow: var(--shadow-lg);
+	}
+
+	.btn-secondary {
+		background-color: transparent;
+		color: var(--color-primary);
+		border: 1px solid var(--color-border);
+	}
+
+	.btn-secondary:hover {
+		background-color: var(--color-surface);
+		border-color: var(--color-secondary);
+		color: var(--color-text);
+		transform: translateY(-1px);
+		box-shadow: var(--shadow);
+	}
+
+	.btn-accent {
+		background-color: var(--color-accent);
+		color: white;
+		border: 1px solid var(--color-accent);
+	}
+
+	.btn-accent:hover {
+		background-color: var(--color-gold-light);
+		border-color: var(--color-gold-light);
+		transform: translateY(-1px);
+		box-shadow: var(--shadow-lg);
+	}
+
+	.section-padding {
+		padding: 4rem 0;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 0.75rem;
+		}
+		
+		.section-padding {
+			padding: 2.5rem 0;
+		}
+	}
+</style>

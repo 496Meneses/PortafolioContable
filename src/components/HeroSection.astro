@@ -1,0 +1,455 @@
+---
+// Hero section with main presentation
+---
+
+<section id="inicio" class="hero">
+	<div class="hero-background">
+		<div class="hero-overlay"></div>
+	</div>
+	
+	<div class="container">
+		<div class="hero-content">
+			<div class="hero-text">
+				<h1 class="hero-title">
+					<span class="hero-highlight">Meneses & Asociados</span>
+					<span class="hero-subtitle">Servicios Profesionales de Confianza</span>
+				</h1>
+				
+				<p class="hero-description">
+					Somos una firma especializada en servicios contables, tributarios, auditoría y servicios empresariales. 
+					Con más de 15 años de experiencia, brindamos soluciones integrales y personalizadas para el crecimiento 
+					y cumplimiento normativo de su empresa.
+				</p>
+
+				<div class="hero-features">
+					<div class="feature-item">
+						<i class="fas fa-certificate"></i>
+						<span>Más de 15 años de experiencia</span>
+					</div>
+					<div class="feature-item">
+						<i class="fas fa-users"></i>
+						<span>Equipo de profesionales certificados</span>
+					</div>
+					<div class="feature-item">
+						<i class="fas fa-shield-alt"></i>
+						<span>Cumplimiento normativo garantizado</span>
+					</div>
+				</div>
+
+				<div class="hero-actions">
+					<a href="#contacto" class="btn btn-primary">
+						<i class="fas fa-phone"></i>
+						Contactar Ahora
+					</a>
+					<a href="#servicios-contables" class="btn btn-secondary">
+						<i class="fas fa-briefcase"></i>
+						Nuestros Servicios
+					</a>
+				</div>
+			</div>
+
+			<div class="hero-visual">
+				<div class="hero-card">
+					<div class="card-header">
+						<h3>¿Por qué elegirnos?</h3>
+					</div>
+					<div class="card-content">
+						<div class="advantage-item">
+							<div class="advantage-icon">
+								<i class="fas fa-calculator"></i>
+							</div>
+							<div class="advantage-text">
+								<h4>Servicios Contables Integrales</h4>
+								<p>Outsourcing, tributación, auditoría y más</p>
+							</div>
+						</div>
+						
+						<div class="advantage-item">
+							<div class="advantage-icon">
+								<i class="fas fa-hard-hat"></i>
+							</div>
+							<div class="advantage-text">
+								<h4>Servicios Empresariales</h4>
+								<p>SST, planes de emergencia, certificaciones</p>
+							</div>
+						</div>
+						
+						<div class="advantage-item">
+							<div class="advantage-icon">
+								<i class="fas fa-clock"></i>
+							</div>
+							<div class="advantage-text">
+								<h4>Atención Personalizada</h4>
+								<p>Respuesta rápida y asesoría especializada</p>
+							</div>
+						</div>
+						
+						<div class="advantage-item">
+							<div class="advantage-icon">
+								<i class="fas fa-award"></i>
+							</div>
+							<div class="advantage-text">
+								<h4>Calidad Certificada</h4>
+								<p>Procesos certificados bajo normas ISO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Stats Section -->
+		<div class="hero-stats">
+			<div class="stat-item">
+				<div class="stat-number">200+</div>
+				<div class="stat-label">Clientes Satisfechos</div>
+			</div>
+			<div class="stat-item">
+				<div class="stat-number">15+</div>
+				<div class="stat-label">Años de Experiencia</div>
+			</div>
+			<div class="stat-item">
+				<div class="stat-number">50+</div>
+				<div class="stat-label">Certificaciones Emitidas</div>
+			</div>
+			<div class="stat-item">
+				<div class="stat-number">100%</div>
+				<div class="stat-label">Cumplimiento Normativo</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scroll indicator -->
+	<div class="scroll-indicator">
+		<a href="#servicios-contables" class="scroll-arrow">
+			<i class="fas fa-chevron-down"></i>
+		</a>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		padding: 6rem 0 2rem;
+		overflow: hidden;
+	}
+
+	.hero-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, var(--color-primary) 0%, #0f172a 50%, #1e293b 100%);
+		z-index: -2;
+	}
+
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: radial-gradient(circle at 30% 20%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+					radial-gradient(circle at 70% 80%, rgba(184, 134, 11, 0.06) 0%, transparent 50%);
+		z-index: -1;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		margin-bottom: 3rem;
+	}
+
+	.hero-text {
+		color: white;
+	}
+
+	.hero-title {
+		font-size: 3.25rem;
+		font-weight: 600;
+		margin-bottom: 1.75rem;
+		line-height: 1.15;
+		display: flex;
+		flex-direction: column;
+		letter-spacing: -0.025em;
+	}
+
+	.hero-highlight {
+		color: white;
+		display: block;
+	}
+
+	.hero-subtitle {
+		color: var(--color-accent);
+		font-size: 1.375rem;
+		font-weight: 400;
+		margin-top: 0.75rem;
+		display: block;
+		letter-spacing: 0.025em;
+	}
+
+	.hero-description {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		margin-bottom: 2rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.hero-features {
+		margin-bottom: 2.5rem;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 1rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.feature-item i {
+		color: var(--color-secondary);
+		width: 20px;
+		text-align: center;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.hero-visual {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-card {
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(25px);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-radius: var(--border-radius-lg);
+		padding: 2.5rem;
+		width: 100%;
+		max-width: 450px;
+		box-shadow: var(--shadow-xl);
+	}
+
+	.card-header {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.card-header h3 {
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.advantage-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.advantage-icon {
+		flex-shrink: 0;
+		width: 48px;
+		height: 48px;
+		background: var(--color-accent);
+		border-radius: var(--border-radius);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	.advantage-icon i {
+		font-size: 1.25rem;
+	}
+
+	.advantage-text h4 {
+		color: white;
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+	}
+
+	.advantage-text p {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 0.9rem;
+		margin: 0;
+	}
+
+	.hero-stats {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+		padding: 2.5rem;
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(25px);
+		border-radius: var(--border-radius-lg);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+	.stat-item {
+		text-align: center;
+		color: white;
+	}
+
+	.stat-number {
+		font-size: 2.25rem;
+		font-weight: 600;
+		color: var(--color-accent);
+		margin-bottom: 0.5rem;
+		letter-spacing: -0.025em;
+	}
+
+	.stat-label {
+		font-size: 0.9rem;
+		color: rgba(255, 255, 255, 0.9);
+		font-weight: 500;
+	}
+
+	.scroll-indicator {
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+	}
+
+	.scroll-arrow {
+		display: block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.1);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		color: white;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s ease;
+		animation: bounce 2s infinite;
+	}
+
+	.scroll-arrow:hover {
+		background: var(--color-secondary);
+		border-color: var(--color-secondary);
+		color: var(--color-primary);
+		transform: translateX(-50%) translateY(-5px);
+	}
+
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-10px);
+		}
+		60% {
+			transform: translateY(-5px);
+		}
+	}
+
+	/* Responsive Design */
+	@media (max-width: 1024px) {
+		.hero-title {
+			font-size: 3rem;
+		}
+		
+		.hero-content {
+			gap: 3rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			min-height: auto;
+			padding: 5rem 0 3rem;
+		}
+
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+			text-align: center;
+		}
+
+		.hero-title {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.hero-actions {
+			justify-content: center;
+		}
+
+		.hero-stats {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.stat-number {
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero {
+			padding: 4rem 0 2rem;
+		}
+
+		.hero-title {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.hero-description {
+			font-size: 1rem;
+		}
+
+		.hero-actions {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn {
+			width: 100%;
+			max-width: 250px;
+			justify-content: center;
+		}
+
+		.hero-card {
+			padding: 1.5rem;
+		}
+
+		.hero-stats {
+			grid-template-columns: 1fr;
+			padding: 1.5rem;
+		}
+
+		.advantage-item {
+			text-align: left;
+		}
+	}
+</style>

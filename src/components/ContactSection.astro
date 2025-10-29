@@ -1,0 +1,748 @@
+---
+// Contact section with form and information
+---
+
+<section id="contacto" class="contact-section">
+	<div class="container">
+		<div class="section-header">
+			<span class="section-badge">Contáctanos</span>
+			<h2 class="section-title">¿Cómo podemos ayudarte?</h2>
+			<p class="section-description">
+				Estamos listos para brindarte la mejor asesoría contable y empresarial. 
+				Contacta con nuestro equipo de expertos y obtén una consulta personalizada.
+			</p>
+		</div>
+
+		<div class="contact-content">
+			<!-- Contact Form -->
+			<div class="contact-form-container">
+				<div class="form-header">
+					<h3>Solicitar Consulta</h3>
+					<p>Déjanos tus datos y nos comunicaremos contigo en menos de 24 horas</p>
+				</div>
+
+				<form class="contact-form" id="contactForm">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="nombre">Nombre completo *</label>
+							<input type="text" id="nombre" name="nombre" required>
+						</div>
+						<div class="form-group">
+							<label for="empresa">Empresa</label>
+							<input type="text" id="empresa" name="empresa">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="email">Correo electrónico *</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="telefono">Teléfono *</label>
+							<input type="tel" id="telefono" name="telefono" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="servicio">Servicio de interés</label>
+						<select id="servicio" name="servicio">
+							<option value="">Seleccione un servicio</option>
+							<optgroup label="Servicios Contables">
+								<option value="outsourcing">Outsourcing Contable</option>
+								<option value="tributacion">Tributación y Cumplimiento Fiscal</option>
+								<option value="auditoria">Auditoría y Revisoría Fiscal</option>
+								<option value="asesoria">Asesoría Administrativa y Financiera</option>
+								<option value="laboral">Laboral y Seguridad Social</option>
+								<option value="certificaciones">Certificaciones y Dictámenes</option>
+								<option value="formacion">Formación y Clasificación Tributaria</option>
+							</optgroup>
+							<optgroup label="Servicios Empresariales">
+								<option value="sst">Seguridad y Salud en el Trabajo (SST)</option>
+								<option value="plan-emergencia">Plan de Emergencia y Certificación</option>
+								<option value="manipulacion">Manipulación de Alimentos</option>
+								<option value="organizacion">Organización Administrativa</option>
+							</optgroup>
+							<option value="otro">Otro servicio</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="mensaje">Mensaje</label>
+						<textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más detalles sobre lo que necesitas..."></textarea>
+					</div>
+
+					<div class="form-group checkbox-group">
+						<label class="checkbox-label">
+							<input type="checkbox" id="politicas" name="politicas" required>
+							<span class="checkmark"></span>
+							Acepto las <a href="#privacy" target="_blank">políticas de privacidad</a> y el tratamiento de mis datos personales *
+						</label>
+					</div>
+
+					<div class="form-group checkbox-group">
+						<label class="checkbox-label">
+							<input type="checkbox" id="newsletter" name="newsletter">
+							<span class="checkmark"></span>
+							Deseo recibir información y actualizaciones sobre servicios contables y empresariales
+						</label>
+					</div>
+
+					<button type="submit" class="btn btn-primary submit-btn">
+						<i class="fas fa-paper-plane"></i>
+						<span>Enviar Consulta</span>
+						<div class="loading-spinner" style="display: none;">
+							<i class="fas fa-spinner fa-spin"></i>
+						</div>
+					</button>
+				</form>
+			</div>
+
+			<!-- Contact Information -->
+			<div class="contact-info-container">
+				<div class="contact-info-card">
+					<h3>Información de Contacto</h3>
+					
+					<div class="contact-methods">
+						<div class="contact-method">
+							<div class="method-icon">
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div class="method-content">
+								<h4>Oficina Principal</h4>
+								<p>Calle 123 #45-67, Oficina 801<br>
+								Centro Empresarial Torre Norte<br>
+								Bogotá D.C., Colombia</p>
+								<a href="#" class="method-link">Ver en Google Maps</a>
+							</div>
+						</div>
+
+						<div class="contact-method">
+							<div class="method-icon">
+								<i class="fas fa-phone"></i>
+							</div>
+							<div class="method-content">
+								<h4>Teléfonos</h4>
+								<p><a href="tel:+5712345678">+57 (1) 234-5678</a><br>
+								<a href="tel:+573001234567">+57 300 123 4567</a></p>
+								<span class="method-note">Lun - Vie: 8:00 AM - 6:00 PM</span>
+							</div>
+						</div>
+
+						<div class="contact-method">
+							<div class="method-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="method-content">
+								<h4>Correos Electrónicos</h4>
+								<p><a href="mailto:info@menesesyasociados.com">info@menesesyasociados.com</a><br>
+								<a href="mailto:contabilidad@menesesyasociados.com">contabilidad@menesesyasociados.com</a></p>
+								<span class="method-note">Respuesta en 24 horas</span>
+							</div>
+						</div>
+
+						<div class="contact-method">
+							<div class="method-icon">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+							<div class="method-content">
+								<h4>WhatsApp Business</h4>
+								<p><a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
+								<span class="method-note">Atención inmediata</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="social-contact">
+						<h4>Síguenos en Redes Sociales</h4>
+						<div class="social-links">
+							<a href="#" class="social-link linkedin">
+								<i class="fab fa-linkedin-in"></i>
+								<span>LinkedIn</span>
+							</a>
+							<a href="#" class="social-link facebook">
+								<i class="fab fa-facebook-f"></i>
+								<span>Facebook</span>
+							</a>
+							<a href="#" class="social-link twitter">
+								<i class="fab fa-twitter"></i>
+								<span>Twitter</span>
+							</a>
+							<a href="#" class="social-link instagram">
+								<i class="fab fa-instagram"></i>
+								<span>Instagram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="business-hours-card">
+					<h3>Horarios de Atención</h3>
+					<div class="hours-list">
+						<div class="hours-item">
+							<span class="day">Lunes - Viernes</span>
+							<span class="time">8:00 AM - 6:00 PM</span>
+						</div>
+						<div class="hours-item">
+							<span class="day">Sábados</span>
+							<span class="time">8:00 AM - 12:00 PM</span>
+						</div>
+						<div class="hours-item">
+							<span class="day">Domingos</span>
+							<span class="time">Cerrado</span>
+						</div>
+					</div>
+					<div class="emergency-contact">
+						<h4>Atención de Emergencias</h4>
+						<p>Para asuntos urgentes fuera del horario de oficina:</p>
+						<a href="tel:+573001234567" class="emergency-phone">
+							<i class="fas fa-phone"></i>
+							+57 300 123 4567
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Success Message -->
+		<div id="success-message" class="success-message" style="display: none;">
+			<div class="success-content">
+				<i class="fas fa-check-circle"></i>
+				<h3>¡Mensaje enviado exitosamente!</h3>
+				<p>Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contact-section {
+		padding: 4rem 0;
+		background: linear-gradient(135deg, var(--color-surface) 0%, white 100%);
+	}
+
+	.section-header {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+	}
+
+	.section-badge {
+		display: inline-block;
+		background-color: var(--color-surface-elevated);
+		color: var(--color-text-light);
+		padding: 0.5rem 1.25rem;
+		border-radius: 6px;
+		font-size: 0.85rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		border: 1px solid var(--color-border);
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--color-primary);
+	}
+
+	.section-description {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	/* Contact Form */
+	.contact-form-container {
+		background: white;
+		border-radius: var(--border-radius-lg);
+		padding: 2.75rem;
+		box-shadow: var(--shadow);
+		border: 1px solid var(--color-border);
+	}
+
+	.form-header {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.form-header h3 {
+		font-size: 1.75rem;
+		margin-bottom: 0.5rem;
+		color: var(--color-primary);
+	}
+
+	.form-header p {
+		color: var(--color-text-light);
+	}
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.form-group label {
+		font-weight: 600;
+		color: var(--color-text);
+		font-size: 0.9rem;
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		padding: 0.875rem;
+		border: 1px solid var(--color-border);
+		border-radius: var(--border-radius);
+		font-size: 0.95rem;
+		transition: var(--transition);
+		font-family: var(--font-primary);
+		background-color: var(--color-background);
+	}
+
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 2px rgba(30, 41, 59, 0.1);
+	}
+
+	.form-group textarea {
+		resize: vertical;
+		min-height: 100px;
+	}
+
+	.checkbox-group {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 0.75rem;
+	}
+
+	.checkbox-label {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		cursor: pointer;
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+
+	.checkbox-label input[type="checkbox"] {
+		display: none;
+	}
+
+	.checkmark {
+		width: 18px;
+		height: 18px;
+		border: 1px solid var(--color-border);
+		border-radius: 3px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: var(--transition);
+		flex-shrink: 0;
+		margin-top: 2px;
+	}
+
+	.checkbox-label input[type="checkbox"]:checked + .checkmark {
+		background-color: var(--color-primary);
+		border-color: var(--color-primary);
+	}
+
+	.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+		content: '✓';
+		color: white;
+		font-size: 0.75rem;
+		font-weight: bold;
+	}
+
+	.checkbox-label a {
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+
+	.submit-btn {
+		width: 100%;
+		padding: 1rem;
+		font-size: 1rem;
+		font-weight: 600;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.submit-btn .loading-spinner {
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	/* Contact Information */
+	.contact-info-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.contact-info-card,
+	.business-hours-card {
+		background: white;
+		border-radius: 1rem;
+		padding: 2rem;
+		box-shadow: var(--shadow);
+		border: 1px solid rgba(30, 58, 138, 0.1);
+	}
+
+	.contact-info-card h3,
+	.business-hours-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		color: var(--color-primary);
+	}
+
+	.contact-methods {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.contact-method {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.method-icon {
+		width: 48px;
+		height: 48px;
+		background: var(--color-primary);
+		border-radius: var(--border-radius);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.method-icon i {
+		font-size: 1.25rem;
+		color: white;
+	}
+
+	.method-content h4 {
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+		color: var(--color-primary);
+	}
+
+	.method-content p {
+		margin-bottom: 0.5rem;
+		line-height: 1.5;
+	}
+
+	.method-content a {
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.method-content a:hover {
+		color: var(--color-primary);
+	}
+
+	.method-link {
+		color: var(--color-accent) !important;
+		font-weight: 500;
+		font-size: 0.9rem;
+	}
+
+	.method-note {
+		font-size: 0.85rem;
+		color: var(--color-text-light);
+		font-style: italic;
+	}
+
+	.social-contact {
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid #e5e7eb;
+	}
+
+	.social-contact h4 {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+		color: var(--color-primary);
+	}
+
+	.social-links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+	}
+
+	.social-link {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.75rem 1rem;
+		border-radius: var(--border-radius);
+		text-decoration: none;
+		font-size: 0.9rem;
+		font-weight: 500;
+		transition: all 0.3s ease;
+	}
+
+	.social-link.linkedin {
+		background-color: #f0f9ff;
+		color: #0077b5;
+	}
+
+	.social-link.facebook {
+		background-color: #eff6ff;
+		color: #1877f2;
+	}
+
+	.social-link.twitter {
+		background-color: #f0f9ff;
+		color: #1da1f2;
+	}
+
+	.social-link.instagram {
+		background-color: #fef7ff;
+		color: #e4405f;
+	}
+
+	.social-link:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--shadow);
+	}
+
+	/* Business Hours */
+	.hours-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		margin-bottom: 2rem;
+	}
+
+	.hours-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.75rem;
+		background-color: var(--color-surface);
+		border-radius: var(--border-radius);
+	}
+
+	.day {
+		font-weight: 500;
+		color: var(--color-text);
+	}
+
+	.time {
+		font-weight: 600;
+		color: var(--color-primary);
+	}
+
+	.emergency-contact {
+		padding-top: 1.5rem;
+		border-top: 1px solid #e5e7eb;
+		text-align: center;
+	}
+
+	.emergency-contact h4 {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		color: var(--color-primary);
+	}
+
+	.emergency-contact p {
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		margin-bottom: 1rem;
+	}
+
+	.emergency-phone {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+		color: white;
+		padding: 0.75rem 1.5rem;
+		border-radius: 50px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: transform 0.3s ease;
+	}
+
+	.emergency-phone:hover {
+		transform: translateY(-2px);
+	}
+
+	/* Success Message */
+	.success-message {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 1000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.success-content {
+		background: white;
+		padding: 3rem;
+		border-radius: 1rem;
+		text-align: center;
+		max-width: 400px;
+		box-shadow: var(--shadow-lg);
+	}
+
+	.success-content i {
+		font-size: 3rem;
+		color: #10b981;
+		margin-bottom: 1rem;
+	}
+
+	.success-content h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: var(--color-primary);
+	}
+
+	.success-content p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.contact-section {
+			padding: 3rem 0;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.contact-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.contact-form-container {
+			padding: 2rem;
+		}
+
+		.form-row {
+			grid-template-columns: 1fr;
+		}
+
+		.social-links {
+			grid-template-columns: 1fr;
+		}
+
+		.success-content {
+			padding: 2rem;
+			margin: 1rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.contact-form-container,
+		.contact-info-card,
+		.business-hours-card {
+			padding: 1.5rem;
+		}
+
+		.form-header h3 {
+			font-size: 1.5rem;
+		}
+
+		.contact-method {
+			flex-direction: column;
+			text-align: center;
+			gap: 0.75rem;
+		}
+	}
+</style>
+
+<script>
+	// Contact form functionality
+	document.addEventListener('DOMContentLoaded', function() {
+		const contactForm = document.getElementById('contactForm') as HTMLFormElement;
+		const successMessage = document.getElementById('success-message') as HTMLElement;
+		
+		if (contactForm) {
+			contactForm.addEventListener('submit', function(e) {
+				e.preventDefault();
+				
+				// Show loading state
+				const submitBtn = contactForm.querySelector('.submit-btn') as HTMLButtonElement;
+				const btnText = submitBtn?.querySelector('span') as HTMLElement;
+				const spinner = submitBtn?.querySelector('.loading-spinner') as HTMLElement;
+				
+				if (btnText && spinner && submitBtn) {
+					btnText.textContent = 'Enviando...';
+					spinner.style.display = 'block';
+					submitBtn.disabled = true;
+				}
+				
+				// Simulate form submission (replace with actual form handler)
+				setTimeout(() => {
+					// Reset form
+					contactForm.reset();
+					
+					// Show success message
+					if (successMessage) {
+						successMessage.style.display = 'flex';
+						
+						// Hide success message after 4 seconds
+						setTimeout(() => {
+							successMessage.style.display = 'none';
+						}, 4000);
+					}
+					
+					// Reset button state
+					if (btnText && spinner && submitBtn) {
+						btnText.textContent = 'Enviar Consulta';
+						spinner.style.display = 'none';
+						submitBtn.disabled = false;
+					}
+				}, 2000);
+			});
+		}
+		
+		// Close success message when clicking outside
+		if (successMessage) {
+			successMessage.addEventListener('click', function(e) {
+				if (e.target === successMessage) {
+					successMessage.style.display = 'none';
+				}
+			});
+		}
+	});
+</script>

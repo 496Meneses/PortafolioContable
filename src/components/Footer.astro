@@ -1,0 +1,341 @@
+---
+// Footer component with contact information and social media
+---
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+			<!-- Company Info -->
+			<div class="footer-section">
+				<div class="footer-logo">
+					<h3>Meneses & Asociados</h3>
+					<p class="footer-tagline">Servicios Profesionales de Confianza</p>
+				</div>
+				<p class="company-description">
+					Firma especializada en servicios contables, tributarios, auditoría y servicios empresariales. 
+					Brindamos soluciones integrales con más de 15 años de experiencia en el mercado.
+				</p>
+			</div>
+
+			<!-- Services -->
+			<div class="footer-section">
+				<h4>Servicios</h4>
+				<ul class="footer-links">
+					<li><a href="#servicios-contables">Servicios Contables</a></li>
+					<li><a href="#servicios-empresariales">Servicios Empresariales</a></li>
+					<li><a href="#auditoria">Auditoría y Revisoría</a></li>
+					<li><a href="#sst">Seguridad y Salud en el Trabajo</a></li>
+					<li><a href="#tributacion">Asesoría Tributaria</a></li>
+				</ul>
+			</div>
+
+			<!-- Contact Info -->
+			<div class="footer-section">
+				<h4>Contacto</h4>
+				<div class="contact-info">
+					<div class="contact-item">
+						<i class="fas fa-map-marker-alt"></i>
+						<div>
+							<p>Calle 123 #45-67, Oficina 801</p>
+							<p>Bogotá D.C., Colombia</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<i class="fas fa-phone"></i>
+						<div>
+							<p>+57 (1) 234-5678</p>
+							<p>+57 300 123 4567</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<i class="fas fa-envelope"></i>
+						<div>
+							<p>info@menesesyasociados.com</p>
+							<p>contabilidad@menesesyasociados.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Business Hours & Social -->
+			<div class="footer-section">
+				<h4>Horarios de Atención</h4>
+				<div class="business-hours">
+					<p><strong>Lunes a Viernes:</strong> 8:00 AM - 6:00 PM</p>
+					<p><strong>Sábados:</strong> 8:00 AM - 12:00 PM</p>
+					<p><strong>Domingos:</strong> Cerrado</p>
+				</div>
+				
+				<div class="social-media">
+					<h5>Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link" aria-label="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="#" class="social-link" aria-label="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="social-link" aria-label="Twitter">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="social-link" aria-label="WhatsApp">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+						<a href="#" class="social-link" aria-label="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom Bar -->
+		<div class="footer-bottom">
+			<div class="footer-bottom-content">
+				<p class="copyright">
+					© 2024 Meneses & Asociados. Todos los derechos reservados.
+				</p>
+				<div class="footer-bottom-links">
+					<a href="#privacy">Política de Privacidad</a>
+					<a href="#terms">Términos y Condiciones</a>
+					<a href="#cookies">Política de Cookies</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		background: linear-gradient(135deg, var(--color-primary) 0%, #1e40af 100%);
+		color: white;
+		padding: 3rem 0 0;
+		margin-top: 4rem;
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer-section h3,
+	.footer-section h4,
+	.footer-section h5 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.footer-section h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-section h4 {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--color-secondary);
+	}
+
+	.footer-section h5 {
+		font-size: 1rem;
+		font-weight: 600;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.footer-tagline {
+		color: var(--color-secondary);
+		font-style: italic;
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.company-description {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.footer-links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer-links li {
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-links a {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		font-size: 0.9rem;
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.footer-links a:hover {
+		color: var(--color-secondary);
+		transform: translateX(5px);
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contact-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+	}
+
+	.contact-item i {
+		color: var(--color-secondary);
+		font-size: 1rem;
+		margin-top: 0.25rem;
+		width: 20px;
+		flex-shrink: 0;
+	}
+
+	.contact-item div p {
+		margin: 0;
+		font-size: 0.9rem;
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 1.4;
+	}
+
+	.business-hours {
+		margin-bottom: 1.5rem;
+	}
+
+	.business-hours p {
+		margin: 0.25rem 0;
+		font-size: 0.9rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.business-hours strong {
+		color: var(--color-secondary);
+	}
+
+	.social-links {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+	}
+
+	.social-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		color: white;
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+
+	.social-link:hover {
+		background-color: var(--color-secondary);
+		color: var(--color-primary);
+		transform: translateY(-3px);
+	}
+
+	.social-link i {
+		font-size: 1rem;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 1.5rem 0;
+		margin-top: 2rem;
+	}
+
+	.footer-bottom-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.copyright {
+		margin: 0;
+		font-size: 0.9rem;
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	.footer-bottom-links {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.footer-bottom-links a {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		font-size: 0.85rem;
+		transition: color 0.3s ease;
+	}
+
+	.footer-bottom-links a:hover {
+		color: var(--color-secondary);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.footer {
+			padding: 2rem 0 0;
+			margin-top: 3rem;
+		}
+
+		.footer-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.footer-bottom-content {
+			flex-direction: column;
+			text-align: center;
+			gap: 1rem;
+		}
+
+		.footer-bottom-links {
+			justify-content: center;
+		}
+
+		.social-links {
+			justify-content: flex-start;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.footer {
+			margin-top: 2rem;
+		}
+
+		.footer-content {
+			gap: 1.5rem;
+		}
+
+		.contact-item {
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+
+		.contact-item i {
+			margin-top: 0;
+		}
+
+		.social-links {
+			justify-content: center;
+		}
+	}
+</style>
